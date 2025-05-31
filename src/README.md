@@ -1,4 +1,4 @@
-# Desenvolvimento do Sistema - Banco Malvader
+<p align="center">  Desenvolvimento do Sistema - Banco Malvader </p> 
 
 ## Apresentação
 
@@ -27,3 +27,13 @@
 -> Public: 
     -> index.php: index do BackEnd para armazenar as rotas da API para carregar os dados.
     -> .htaccess: configuração para rodar os dados do banco para o BackEnd.
+    -> Controllers: Classes de controle para acessar os models das classes.
+    -> Config: configurações gerais do sistema, como: conexão com banco, jwt decoded e otp expiration.
+
+# Docker - Rodar as portas para front e back
+
+-> isso fará com que o front e back rodem em portas diferentes para que a aplicação possa rodar em diferentes portas.
+
+# Astah - Modelagem dos diagrama de classes, caso de uso e sequência
+
+-> Usei este software para modelar os diagramas do sistema bancário.

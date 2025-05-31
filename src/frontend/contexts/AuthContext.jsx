@@ -17,7 +17,7 @@ export function AuthProvider({ children }) {
                 setUser(decoded);
                 setToken(storedToken);
             } catch (error) {
-                logout();
+                logout(); // Função para deslogar do sistema
             }
         }
     }, []);

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Head from 'next/head';
 import Link from 'next/link';
 
+// Estilos Gerais de cada uma das páginas do frontend
 const AuthContainer = styled.div`
   display: flex;
   min-height: 100vh;
