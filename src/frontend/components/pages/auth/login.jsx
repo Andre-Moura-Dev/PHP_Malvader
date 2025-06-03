@@ -32,7 +32,28 @@ export default function LoginPage() {
 
     return (
         <AuthLayout title="login - banco Malvader">
-            
+            <form onSubmit={handleSubmit}>
+                <div className="form-group">
+                    <label>CPF</label>
+                    <Input type="text" 
+                    value={cpf} 
+                    onChange={(e) => setCpf(e.target.value.replace(/\D/g, ''))} 
+                    placeholder="Digite o seu Cpf" 
+                    required/>
+                </div>
+                <div className="form-group">
+                    <label>SENHA</label>
+                    <Input type="password" 
+                    value={senha} 
+                    onChange={(e) => setSenha(e.target.value)} 
+                    placeholder="Informe a sua senha" 
+                    required/>
+                </div>
+                {error && <div className="error-message">{error}</div>}
+                <button type="submit" disabled={loading}>
+                    {loading ? 'Carregando...' : 'Entrar'}
+                </button>
+            </form>
         </AuthLayout>
-    )
+    );
 }
