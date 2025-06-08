@@ -119,7 +119,7 @@ export default function SaqueForm({ contaId, onSuccess }) {
                 </FormGroup>
 
                 <FormGroup>
-                    <label>Senha</label>
+                    <Label>Senha</Label>
                     <Input type="password" 
                     value={senha} 
                     onChange={(e) => setSenha(e.target.value)} 

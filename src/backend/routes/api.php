@@ -225,7 +225,7 @@
                     throw new Exception("Método não permitido ou acesso negado", 405);
                 }
                 break;
-            case 'relatorios':
+            case 'relatorios/gerar':
                 if($requestMethod == 'GET' && $usertype == 'FUNCIONARIO') {
                     $relatorioController = new RelatorioController();
                     $result = $relatorioController->gerarRelatorioTransacoes(

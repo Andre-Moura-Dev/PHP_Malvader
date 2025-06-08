@@ -80,6 +80,22 @@ body {
   background-color: #2c5282;
 }
 
+/* Adiciona transição suave ao aparecer/desaparecer */
+.loading-spinner-enter {
+  opacity: 0;
+}
+.loading-spinner-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.loading-spinner-exit {
+  opacity: 1;
+}
+.loading-spinner-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   .conta-card .actions {
