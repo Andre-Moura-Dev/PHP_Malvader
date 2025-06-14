@@ -4,7 +4,7 @@
             'host' => getenv('DB_HOST') ?: 'localhost',
             'name' => getenv('DB_NAME') ?: 'banco_malvader',
             'user' => getenv('DB_USER') ?: 'root',
-            'pass' => getenv('DB_PASS') ?: '',
+            'pass' => getenv('DB_PASS') ?: 'PYTHON66@java',
             'charset' => 'utf8mb4'
         ],
         'jwt' => [

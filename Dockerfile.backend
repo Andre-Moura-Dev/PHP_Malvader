@@ -1,0 +1,12 @@
+FROM php:8.2-apache
+
+# Ativa mod_rewrite
+RUN a2enmod rewrite
+
+# Copia o código para o container
+COPY ./src/backend/ /var/www/html
+
+# Define permissões
+RUN chown -R www-data:www-data /var/www/html
+
+EXPOSE 80

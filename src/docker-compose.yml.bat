@@ -16,19 +16,19 @@ services:
   php:
     build:
       context: .
-      dockerfile: Dockerfile.backend
+      dockerfile: ./Dockerfile.backend
     container_name: malvader_php
     depends_on:
       - mysql
     ports:
       - "8080:80"
     volumes:
-      - ./backend:/var/www/html
+      - ./src/backend:/var/www/html
 
   frontend:
     build:
       context: ./src
-      dockerfile: ../Dockerfile.frontend
+      dockerfile: ./Dockerfile.frontend
     container_name: malvader_frontend
     ports:
       - "3000:3000"
@@ -36,6 +36,10 @@ services:
       - php
     environment:
       NEXT_PUBLIC_API_URL: "http://localhost:8080"
+    volumes:
+      - ./:/var/www/front
+
 
 volumes:
   db_data:
+    driver: local
