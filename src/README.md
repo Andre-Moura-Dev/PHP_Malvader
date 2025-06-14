@@ -133,7 +133,8 @@
 
     <section>
       <h2>Créditos</h2>
-      <p>Desenvolvido por alunos da Universidade Católica de Brasília como parte do trabalho final da disciplina de Programação Orientada a Objetos.</p>
+      <p>Desenvolvido por André de Oliveira Moura - Desenvolvedor Full-Stack Júnior</p>
+      <p>Trabalho Final Laboratório de banco de dados.</p>
     </section>
   </main>
 </body>
